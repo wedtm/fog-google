@@ -22,6 +22,10 @@ module Fog
           }
 
           body["region"] = options[:region] if options[:region]
+          
+          if options[:data_disk_size_gb]
+            body["settings"]["dataDiskSizeGb"] = options[:data_disk_size_gb]
+          end
           if options[:activation_policy]
             body["settings"]["activationPolicy"] = options[:activation_policy]
           end
