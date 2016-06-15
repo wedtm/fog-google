@@ -19,6 +19,7 @@ module Fog
         attribute :state
 
         # These attributes are not available in the representation of an 'Instance' returned by the Google SQL API.
+        attribute :data_disk_size_gb
         attribute :activation_policy
         attribute :autorized_gae_applications
         attribute :backup_configuration
